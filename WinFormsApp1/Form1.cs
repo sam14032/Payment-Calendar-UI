@@ -54,7 +54,7 @@ namespace WinFormsApp1
             {
                 warningText += "Next payment date can't be before today \n";
             }
-            if (!int.TryParse(AmountTextbox.Text, out int amount) || amount < 0)
+            if (!double.TryParse(AmountTextbox.Text, out double amount) || amount < 0)
             {
                 warningText += "The amount must be decimal";
             }
