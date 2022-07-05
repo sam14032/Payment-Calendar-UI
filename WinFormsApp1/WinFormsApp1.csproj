@@ -1,0 +1,38 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+	<PublishSingleFile>true</PublishSingleFile>
+	<SelfContained>true</SelfContained>
+    <UseWindowsForms>true</UseWindowsForms>
+	<RuntimeIdentifier>win-x64</RuntimeIdentifier>
+	<PublishReadyToRun>true</PublishReadyToRun>
+  </PropertyGroup>
+
+  <ItemGroup>
+	  <PackageReference Include="MediatR" Version="9.0.0" />
+	  <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="9.0.0" />
+	  <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.13" />
+	  <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="5.0.13">
+		  <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		  <PrivateAssets>all</PrivateAssets>
+	  </PackageReference>
+	  <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="5.0.13" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="6.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="POC.API.Lib">
+      <HintPath>..\..\POC\POC.API.Lib\bin\Debug\net5.0\POC.API.Lib.dll</HintPath>
+    </Reference>
+    <Reference Include="POC.Domain">
+      <HintPath>..\..\POC\POC.API.Lib\bin\Debug\net5.0\POC.Domain.dll</HintPath>
+    </Reference>
+    <Reference Include="POC.Infrastructure">
+      <HintPath>..\..\POC\POC.API.Lib\bin\Debug\net5.0\POC.Infrastructure.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
